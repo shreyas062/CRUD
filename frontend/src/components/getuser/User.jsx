@@ -56,7 +56,7 @@ const User = () => {
                 <td>{user.email}</td>
                 <td className="actionButtons">
                   <button onClick={() => deleteUser(user._id)}>Delete</button>
-                  <Link to={`/edit/` + user._id}>Edit</Link>
+                  <Link to={/edit/ + user._id}>Edit</Link>
                 </td>
               </tr>
             );
