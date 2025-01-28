@@ -9,7 +9,7 @@ const User = () => {
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get(
-        "https://crud-306b.onrender.com/api/getall"
+        "https://backend-od27.onrender.com/api/getall"
       );
       setUsers(response.data);
     };
@@ -18,7 +18,7 @@ const User = () => {
 
   const deleteUser = async (userId) => {
     await axios
-      .delete(`https://crud-306b.onrender.com/api/delete/${userId}`)
+      .delete(`https://backend-od27.onrender.com/api/delete/${userId}`)
       .then((response) => {
         setUsers((prevUser) => prevUser.filter((user) => user._id !== userId));
       })
